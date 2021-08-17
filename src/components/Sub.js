@@ -19,11 +19,12 @@ const Sub = () => {
   };
 
   const handleClick = (e) => {
-    setId(e.target.id);
     if(e.target.value === "Three"){
       settextarea("block");
+      setId("");
     } else {
       settextarea("none");
+      setId(e.target.id);
     }
   };
 
@@ -103,8 +104,8 @@ const Sub = () => {
             >
               <div className="modal-dialog" role="document">
                 <div className="modal-content">
-                  <div className="modal-body">
-                    Please select the mode in ({value})
+                  <div style={{fontFamily: `Roboto,Helvetica Neue,sans-serif`}} className="modal-body">
+                  {`${textarea}` === "block" ? `Please give some brief description in the section(${value})` : `Please select the mode in (${value})`}
                   </div>
                 </div>
               </div>
@@ -141,7 +142,7 @@ const Sub = () => {
                         />
                       </svg>
                       <div className="popup-heading-text text-center ">
-                        Your documents in this Query have been submitted.{" "}
+                        Your documents in this Query have been submitted.
                       </div>
 
                       <div
