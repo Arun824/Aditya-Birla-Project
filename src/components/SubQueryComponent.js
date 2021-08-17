@@ -10,7 +10,7 @@ const SubQueryComponent = () => {
       <div className="query-container1 my-2">
         <Link exact to="/" style={{ textDecoration: "none" }}>
           <div className="d-flex ">
-            <span style={{ color: "gray" }} clasName="text-start">
+            <span style={{ color: "gray", marginLeft: "-7px" }} clasName="text-start">
               <svg
                 xmlns="https://www.w3.org/2000/svg"
                 width="32"

@@ -26,7 +26,7 @@ const Query = () => {
           }}
         ></div>
 
-        <div>
+        <div style={{marginRight: "-4px"}}>
           <Link to="/query" style={{ textDecoration: "none" }}>
             <div className="d-flex col justify-content-end align-items-center" style={{ color: "#c7222a" }}>
               <span style={{ fontSize: "18px" }}>FAQ</span>
