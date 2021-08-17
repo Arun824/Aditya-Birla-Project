@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
-const ClaimFormMarkComponent = ({ handleChange, handleClick, status }) => {
-  
+const ClaimFormMarkComponent = ({ handleChange, handleClick, status, textarea }) => {
+
+ 
+
+
   return (
     <div style={{fontFamely: "PF Handbook Pro, sans-serif"}} className="my-3" id="claimId">
       <div className="d-flex ">
@@ -33,7 +36,7 @@ const ClaimFormMarkComponent = ({ handleChange, handleClick, status }) => {
    
       <button
          style={{fontWeight: "bold", fontSize: "14px"}}
-        className="accordion-button collapsed bg-white text-dark p-2"
+        className="accordion-button collapsed bg-white text-dark rounded p-2"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#flush-collapseOne"
@@ -74,6 +77,9 @@ const ClaimFormMarkComponent = ({ handleChange, handleClick, status }) => {
             My Hand
           </label>
          </div>
+         <div style={{display: textarea}} className="p-2">
+           <textarea rows="4" className="w-100 form-control"></textarea>
+           </div>
          </div>
          </form>
       </div>

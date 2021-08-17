@@ -172,9 +172,9 @@ input[type='radio'] {
 input[type='radio']:before {
     content: '';
     display: block;
-    width: 50%;
-    height: 50%;
-    margin: 20% auto;
+    width: 55%;
+    height: 55%;
+    margin: 18% auto;
     border-radius: 50%;
 }
 

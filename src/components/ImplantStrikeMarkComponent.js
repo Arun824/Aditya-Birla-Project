@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ImplantStrikeMarkComponent = ({ handleChange, handleClick, status }) =>{
+const ImplantStrikeMarkComponent = ({ handleChange, handleClick, status, textarea }) =>{
 
     return (
        <div style={{fontFamely: "PF Handbook Pro, sans-serif"}} className="my-3" id="implantId">
@@ -34,7 +34,7 @@ const ImplantStrikeMarkComponent = ({ handleChange, handleClick, status }) =>{
    
       <button
         style={{borderRadius: "3px"}}
-        className="accordion-button collapsed bg-white text-dark p-1"
+        className="accordion-button collapsed bg-white text-dark rounded p-2"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#flush-collapseOne-implant"
@@ -75,6 +75,9 @@ const ImplantStrikeMarkComponent = ({ handleChange, handleClick, status }) =>{
             My Hand
           </label>
          </div>
+         <div style={{display: textarea}} className="p-2">
+           <textarea rows="4" className="w-100 form-control"></textarea>
+           </div>
          </div>
          </form>
       </div>

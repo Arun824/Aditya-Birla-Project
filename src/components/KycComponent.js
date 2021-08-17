@@ -14,10 +14,12 @@ const KycComponent = () => {
      };
      const handleChange = event => {
        const fileUploaded = event.target.files[0];
-       setKycFileId(fileUploaded.lastModified);
-       setKycFile([...kycFile ,fileUploaded.name.split(' ')[0]])
-       setDisplay('block');
-       event.target.value = null;
+       if(kycFile.length <= 2 && fileUploaded.size/1000 <= 2000){
+        setKycFileId(fileUploaded.lastModified);
+        setKycFile([...kycFile ,fileUploaded.name.split(' ')[0]])
+        setDisplay('block');
+        event.target.value = null;
+       }
      };
 
      const fileDelete = event =>{
@@ -44,11 +46,11 @@ const KycComponent = () => {
           return (
             <div id={kycFileId} className="mx-3 mb-2 p-2 rounded border border-1 border-secondary w-94 d-flex justify-content-between" style={{display}}>
             <div className="doc-name">
-              {item}
+            {item.name.split(' ')[0]}
             </div>
             <div className="d-flex justify-content-between">
-              <div className="mx-2">278 kb</div>
-               <spna className={item} onClick={fileDelete}>x</spna>
+              <div className="mx-2">{item.size/1000 >= 1000 ? `${Math.round(item.size/1000000)} mb` : `${Math.round(item.size/1000)} kb`}</div>
+               <spna className= {item.name.split(' ')[0]} onClick={fileDelete}>x</spna>
             </div>
           </div>
           )

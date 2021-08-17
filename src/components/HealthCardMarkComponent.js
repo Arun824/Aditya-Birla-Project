@@ -1,6 +1,6 @@
 import React from 'react';
 
-const HealthCardMarkComponent = ({ handleChange, handleClick, status }) =>{
+const HealthCardMarkComponent = ({ handleChange, handleClick, status, textarea }) =>{
 
     return(
         <div style={{fontFamely: "PF Handbook Pro, sans-serif"}} className="my-3" id="healthId">
@@ -31,7 +31,7 @@ const HealthCardMarkComponent = ({ handleChange, handleClick, status }) =>{
    
       <button
         style={{borderRadius: "3px"}}
-        className="accordion-button collapsed bg-white text-dark p-1"
+        className="accordion-button collapsed bg-white text-dark rounded p-2"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#flush-collapseOne-health"
@@ -72,6 +72,9 @@ const HealthCardMarkComponent = ({ handleChange, handleClick, status }) =>{
             My Hand
           </label>
          </div>
+         <div style={{display: textarea}} className="p-2">
+           <textarea rows="4" className="w-100 form-control"></textarea>
+           </div>
          </div>
          </form>
       </div>

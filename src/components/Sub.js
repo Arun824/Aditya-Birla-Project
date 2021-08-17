@@ -10,6 +10,7 @@ const Sub = () => {
   const [status, setStatus] = useState(false);
   const [value, setValue] = useState("");
   const [id, setId] = useState("");
+  const [textarea, settextarea] = useState("none")
 
   const handleChange = (e) => {
     setStatus(e.target.checked);
@@ -19,6 +20,11 @@ const Sub = () => {
 
   const handleClick = (e) => {
     setId(e.target.id);
+    if(e.target.value === "Three"){
+      settextarea("block");
+    } else {
+      settextarea("none");
+    }
   };
 
   const example = `exampleModel`;
@@ -34,26 +40,31 @@ const Sub = () => {
           <section>
             <ClaimFormMarkComponent
               status={status}
+              textarea={textarea}
               handleChange={handleChange}
               handleClick={handleClick}
             />
             <HealthCardMarkComponent
               status={status}
+              textarea={textarea}
               handleChange={handleChange}
               handleClick={handleClick}
             />
             <KycDocumentMarkComponent
               status={status}
+              textarea={textarea}
               handleChange={handleChange}
               handleClick={handleClick}
             />
             <ImplantStrikeMarkComponent
               status={status}
+              textarea={textarea}
               handleChange={handleChange}
               handleClick={handleClick}
             />
             <DocumentMarkComponent
               status={status}
+              textarea={textarea}
               handleChange={handleChange}
               handleClick={handleClick}
             />
