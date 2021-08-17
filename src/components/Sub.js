@@ -75,7 +75,6 @@ const Sub = () => {
                 status ? `active-color ` : `unactive-color`
               } rounded`}
               data-toggle="modal"
-              // data-bs-toggle="modal"
               data-target={`#${example}${id}`}
               disabled={!status}
             >

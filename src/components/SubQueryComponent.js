@@ -12,7 +12,7 @@ const SubQueryComponent = () => {
           <div className="d-flex ">
             <span style={{ color: "gray" }} clasName="text-start">
               <svg
-                xmlns="http://www.w3.org/2000/svg"
+                xmlns="https://www.w3.org/2000/svg"
                 width="32"
                 height="32"
                 fill="currentColor"
@@ -71,7 +71,7 @@ const SubQueryComponent = () => {
               >
                 What is Lorem Ipsum Lorem Ipsum is simply dummy text of the
                 printing and typesetting industry Lorem Ipsum has been the
-                industry’s standard dummy text ever since the 1500s when 
+                industry standard dummy text ever since the 1500s when 
                 unknown printer.
               </p>
               <span style={{ fontSize: "14px", fontWeight: "900" }}>
