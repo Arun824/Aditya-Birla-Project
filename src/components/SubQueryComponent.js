@@ -45,13 +45,13 @@ const SubQueryComponent = () => {
             aria-controls="flush-collapseOne"
             id="faqId"
           >
-            <span style={{ fontsize: "14px"}}>
+            <span style={{ fontsize: "14px"}} className="">
               Where to download required documents?
             </span>
           </button>
           <div
             id="flush-collapseOne"
-            class="accordion-collapse collapse"
+            class="accordion-collapse collapse "
             aria-labelledby="flush-headingOne"
             data-bs-parent="#accordionFlushExample"
           >
