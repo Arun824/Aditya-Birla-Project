@@ -210,6 +210,20 @@ input[type="radio"]:checked {
 .btn-faq {
     font-weight: bold;
 }
+.accordion-button::after{
+    background-image: url("url-logo/chevron-icon-black.png");
+}
+.accordion-button:not(.collapsed) {
+      color: #c7222a;
+     background-color: #ffebed; 
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+} 
+.accordion-button:not(.collapsed)::after {
+    
+        background-image: url("url-logo/chevron-icon.png");
+
+}
+
 .submit-now-btn-model {
     margin-top: 90px;
     margin-left: 20px;

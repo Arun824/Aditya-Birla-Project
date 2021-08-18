@@ -43,7 +43,7 @@ const SubQueryComponent = () => {
             data-bs-target="#flush-collapseOne"
             aria-expanded="false"
             aria-controls="flush-collapseOne"
-            id="faqId"
+             id="faqId"
           >
             <span style={{ fontsize: "14px"}} className="">
               Where to download required documents?

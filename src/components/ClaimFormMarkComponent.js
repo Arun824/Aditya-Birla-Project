@@ -3,8 +3,6 @@ import React from "react";
 const ClaimFormMarkComponent = ({ handleChange, handleClick, status, textarea }) => {
 
  
-
-
   return (
     <div style={{fontFamely: "PF Handbook Pro, sans-serif"}} className="my-3" id="claimId">
       <div className="d-flex ">
@@ -32,7 +30,7 @@ const ClaimFormMarkComponent = ({ handleChange, handleClick, status, textarea })
         >
        
        <div className="accordion accordion-flush" id="accordionFlushExample">
-  <div style={{backgroundColor: "rgb(247 247 247)"}}  className="accordion-item">
+  <div style={{backgroundColor: "rgb(247 247 247)"}}  className="accordion-item ">
    
       <button
          style={{fontWeight: "bold", fontSize: "14px"}}
