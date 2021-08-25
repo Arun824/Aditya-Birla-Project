@@ -7,12 +7,10 @@ import DocumentComponent from "./DocumentComponent";
 import InstructionComponent from "./InstructionComponent";
 import FooterButtonComponent from "./FooterButtonComponent";
 import Navbar from "./Navbar";
-
-import {useParams} from 'react-router-dom'
-
-
 import Card from "./Card";
 import Query from "./Query";
+
+import {useParams} from 'react-router-dom'
 
 /* actions */
 import userData from '../actions/userData'
@@ -22,21 +20,20 @@ import { StoreContext } from "../contexts/Store";
 
 const Home = () => {
 
-
  const {callid} = useParams();
-
-    const { state, dispatch } = useContext(StoreContext);
-
+ 
+  const { state, dispatch } = useContext(StoreContext);
+   
     const { userdata } = state;
-
+    
     useEffect(() => {
-        userData(callid,"customer_name" ,dispatch);
+        userData(callid,"policy_holder_name" ,dispatch);
     }, [])
 
     return (
-        <div style={{ backgroundColor: "rgb(247 247 247)"}}>
+        <div style={{ backgroundColor: "rgb(247 247 247)"}} >
         <Navbar />
-        <Card />
+        <Card data={userdata}/>
         <Query />
         <ClaimformComponent />
         <HealthCardComponent />

@@ -31,7 +31,6 @@ const  ClaimformComponet = () => {
    setDisplay('none')
   }
 
-console.log(claimFile)
 
   return (  
     <div style={{fontFamily: "PF Handbook Pro, sans-serif", fontSize: "14px", fontWeight: "700"}}  className="mb-3"> 

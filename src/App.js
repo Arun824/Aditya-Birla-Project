@@ -13,6 +13,7 @@ import { Route, HashRouter, Switch } from "react-router-dom";
 
 
 const App = () => {
+ 
   return (
     <React.StrictMode>
     <Store>
@@ -21,7 +22,7 @@ const App = () => {
       
       <Route exact path="/:callid?" component={Home} />
 
-      <Route exact path="/query">
+      <Route exact path="/:callid/query">
         <div style={{ background: "rgb(247 247 247)", height: "100vh" }}>
         <Navbar />
        <SubQueryComponent />
@@ -29,7 +30,7 @@ const App = () => {
       </Route>
         
       
-      <Route exact path="/all">
+      <Route exact path="/:callid/all">
         <div style={{ background: "rgb(247 247 247)" }}>
         <Navbar />
         <Card />

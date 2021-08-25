@@ -34,6 +34,7 @@ const Store = (props) => {
           error: errorState,
           paymentCallback: paymentCallbackState
       })
+     
     return (
         <StoreContext.Provider value={{state, dispatch}}>
             {props.children}

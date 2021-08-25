@@ -1,6 +1,6 @@
 import React from "react";
 
-const Card = () => {
+const Card = ( {data} ) => {
   return (
     <div
       style={{ fontFamily: "PF Handbook Pro, sans-serif" }}
@@ -12,7 +12,7 @@ const Card = () => {
         className="text-dark"
         id="nameHeading"
       >
-        Hi, Mr Narendra Singh
+        Hi, {data.policy_holder_name}
       </span>
 
       <br />
